@@ -11,32 +11,30 @@
   <body>
     <div class="bg-gray-100">
       <div
-        class="flex items-center justify-center w-5/6 h-screen text-white mx-auto"
+        class="flex items-center justify-center w-full h-screen text-white mx-auto px-4 sm:px-8"
       >
-        <div class="relative flex shadow-2xl">
-          <div class="w-2/5 h-max bg-cover relative">
+        <div class="relative flex flex-col md:flex-row shadow-2xl w-full max-w-6xl">
+          <div class="md:w-2/5 w-full bg-cover relative">
             <!-- Background Image -->
-            <img src="assets/BG.png" class="w-full" alt="Background" />
+            <img src="assets/BG.png" class="w-full h-full object-cover" alt="Background" />
 
             <!-- Ellipse Image -->
             <img
               src="assets/Ellipse 2.png"
-              class="absolute inset-0 m-auto"
-              style="width: 75%; height: auto"
+              class="absolute inset-0 m-auto w-3/4 h-auto"
               alt="Ellipse"
             />
 
             <!-- Inner Image inside Ellipse -->
             <img
               src="assets/Imgs-1.png"
-              class="absolute inset-0 m-auto"
-              style="width: 50%; height: auto"
+              class="absolute inset-0 m-auto w-1/2 h-auto"
               alt="Inner Image"
             />
 
             <!-- Positioned Heading -->
             <h2
-              class="absolute top-10 left-1/2 transform -translate-x-1/2 text-center text-white text-xl font-semibold"
+              class="absolute top-10 left-1/2 transform -translate-x-1/2 text-center text-white text-lg md:text-xl font-semibold"
             >
               Social media shared today, tomorrow or by location
             </h2>
@@ -57,82 +55,74 @@
             </div>
           </div>
 
-          <div class="w-3/5 relative flex justify-center bg-white ">
-
+          <div class="md:w-3/5 w-full bg-white p-4 md:p-8 flex justify-center">
             <!-- Centered Content -->
-            <div class="absolute w-4/5 top-10 text-white py-4">
+            <div class="w-full max-w-md text-white py-4">
 
-              <div class="top-5">
-                <img src="assets/Logo.png" style="width: 15%" alt="" />
+              <div class="top-5 mb-5">
+                <img src="assets/Logo.png" class="w-16 md:w-20" alt="Logo" />
               </div>
 
-              <div class="mt-5 text-black font-bold text-3xl">
+              <div class="text-black font-bold text-2xl md:text-3xl">
                 Create account
               </div>
               <div class="text-gray-700 text-sm pt-2">
-                for bussiness band or celebrity.
+                for business, band, or celebrity.
               </div>
 
-              <form class="relative mt-10 flex flex-wrap justify-between">
-                <div style="width: 48%" class="pb-3">
+              <form class="mt-10 flex flex-wrap justify-between">
+                <div class="w-full md:w-48 pb-3">
                   <label class="block text-gray-600 text-sm">First Name</label>
                   <input
                     type="text"
-                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center items-center"
+                    class="w-full border border-gray-400 rounded h-9 text-black text-center"
                   />
                 </div>
-                <div style="width: 48%" class="pb-3">
+                <div class="w-full md:w-48 pb-3">
                   <label class="block text-gray-600 text-sm">Last Name</label>
                   <input
                     type="text"
-                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center"
+                    class="w-full border border-gray-400 rounded h-9 text-black text-center"
                   />
                 </div>
-                <div style="width: 48%" class="pb-3">
-                  <label class="block text-gray-600 text-sm"
-                    >Emial or phone number</label
-                  >
+                <div class="w-full md:w-48 pb-3">
+                  <label class="block text-gray-600 text-sm">Email or phone number</label>
                   <input
                     type="email"
-                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center"
+                    class="w-full border border-gray-400 rounded h-9 text-black text-center"
                   />
                 </div>
-                <div style="width: 48%" class="pb-3">
-                  <label class="block text-gray-600 text-sm"
-                    >Date of birth</label
-                  >
+                <div class="w-full md:w-48 pb-3">
+                  <label class="block text-gray-600 text-sm">Date of birth</label>
                   <input
                     type="date"
-                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center items-center"
+                    class="w-full border border-gray-400 rounded h-9 text-black text-center"
                   />
                 </div>
-                <div style="width: 48%" class="pb-3">
+                <div class="w-full md:w-48 pb-3">
                   <label class="block text-gray-600 text-sm">Password</label>
                   <input
                     type="password"
-                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center"
+                    class="w-full border border-gray-400 rounded h-9 text-black text-center"
                   />
                 </div>
-                <div style="width: 48%" class="pb-3">
-                  <label class="block text-gray-600 text-sm"
-                    >Confirm password</label
-                  >
+                <div class="w-full md:w-48 pb-3">
+                  <label class="block text-gray-600 text-sm">Confirm password</label>
                   <input
                     type="password"
-                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center"
+                    class="w-full border border-gray-400 rounded h-9 text-black text-center"
                   />
                 </div>
-                <div class="flex w-full justify-between">
-                  <div class="flex items-center mb-4 self-center">
+                <div class="flex w-full justify-between items-center">
+                  <div class="flex items-center mb-4">
                     <input
                       id="default-checkbox"
                       type="checkbox"
-                      value=""
-                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
                     />
                     <label
                       for="default-checkbox"
-                      class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      class="ml-2 text-sm font-medium text-gray-900"
                       >Default checkbox</label
                     >
                   </div>
@@ -140,37 +130,30 @@
                     Forgot Password?
                   </div>
                 </div>
-                <div class="flex items-center mb-4 self-center w-full">
+                <div class="flex items-center mb-4">
                   <input
-                    id="default-checkbox"
+                    id="terms-checkbox"
                     type="checkbox"
-                    value=""
-                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
                   />
                   <label
-                    for="default-checkbox"
-                    class="ms-2 text-sm text-gray-400"
+                    for="terms-checkbox"
+                    class="ml-2 text-sm text-gray-400"
                     >I agree to all the
-                    <span class="text-blue-400">Terms </span>and<span
-                      class="text-blue-400"
-                    >
-                      Privacy Policy</span
-                    >
+                    <span class="text-blue-400">Terms</span> and <span class="text-blue-400">Privacy Policy</span>
                   </label>
                 </div>
-                <div class=" w-full pt-3 flex justify-between">
-                  <button class="bg-blue-600 rounded-md text-sm cursor-pointer" style="width: 48%;" type="submit">Create account</button>
-                  <img class="cursor-pointer" src="assets/google-button.png" style="width: 48%;" alt="">
+                <div class="w-full pt-3 flex flex-wrap justify-between">
+                  <button class="bg-blue-600 rounded-md text-sm w-full md:w-48 py-2 mb-3 md:mb-0" type="submit">Create account</button>
+                  <img class="cursor-pointer w-full md:w-48 py-2" src="assets/google-button.png" alt="Google Sign-In">
                 </div>
-                <div class="text-black  text-center cursor-pointer pb-4 w-full">Don't have an account? <span class="text-blue-400">Log in</span></div>
+                <div class="text-black text-center cursor-pointer pb-4 w-full">Don't have an account? <span class="text-blue-400">Log in</span></div>
               </form>
-              <div class=" pt-10 flex space-x-2">
-                <img src="assets/Layer 2.png" style="width: 20%;"  alt="">
-                <img src="assets/Group.png" style="width: 20%;" alt="">
+              <div class="pt-10 flex space-x-2">
+                <img src="assets/Layer 2.png" class="w-20" alt="Layer 2">
+                <img src="assets/Group.png" class="w-20" alt="Group">
               </div>
             </div>
-           
-
           </div>
         </div>
       </div>
