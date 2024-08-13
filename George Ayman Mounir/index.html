@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stylee.css" />
+    <title>Image Overlay</title>
+  </head>
+
+  <body>
+    <div class="bg-gray-100">
+      <div
+        class="flex items-center justify-center w-5/6 h-screen text-white mx-auto"
+      >
+        <div class="relative flex shadow-2xl">
+          <div class="w-2/5 h-max bg-cover relative">
+            <!-- Background Image -->
+            <img src="assets/BG.png" class="w-full" alt="Background" />
+
+            <!-- Ellipse Image -->
+            <img
+              src="assets/Ellipse 2.png"
+              class="absolute inset-0 m-auto"
+              style="width: 75%; height: auto"
+              alt="Ellipse"
+            />
+
+            <!-- Inner Image inside Ellipse -->
+            <img
+              src="assets/Imgs-1.png"
+              class="absolute inset-0 m-auto"
+              style="width: 50%; height: auto"
+              alt="Inner Image"
+            />
+
+            <!-- Positioned Heading -->
+            <h2
+              class="absolute top-10 left-1/2 transform -translate-x-1/2 text-center text-white text-xl font-semibold"
+            >
+              Social media shared today, tomorrow or by location
+            </h2>
+
+            <!-- Dots with spacing -->
+            <div
+              class="flex absolute bottom-5 left-1/2 transform -translate-x-1/2 space-x-3"
+            >
+              <span
+                class="cursor-pointer h-3 w-3 border hover:bg-white border-white bg-transparent rounded-full"
+              ></span>
+              <span
+                class="cursor-pointer h-3 w-3 border hover:bg-white border-white bg-transparent rounded-full"
+              ></span>
+              <span
+                class="cursor-pointer h-3 w-3 border hover:bg-white border-white bg-transparent rounded-full"
+              ></span>
+            </div>
+          </div>
+
+          <div class="w-3/5 relative flex justify-center bg-white">
+            <!-- Centered Content -->
+            <div class="absolute w-4/5 top-10 text-white py-4">
+              <div class="top-5">
+                <img src="assets/Logo.png" style="width: 15%" alt="" />
+              </div>
+
+              <div class="mt-5 text-black font-bold text-3xl">
+                Create account
+              </div>
+              <div class="text-gray-700 text-sm pt-2">
+                for bussiness band or celebrity.
+              </div>
+
+              <form class="relative mt-10 flex flex-wrap justify-between">
+                <div style="width: 48%" class="pb-3">
+                  <label class="block text-gray-600 text-sm">First Name</label>
+                  <input
+                    type="text"
+                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center items-center"
+                  />
+                </div>
+                <div style="width: 48%" class="pb-3">
+                  <label class="block text-gray-600 text-sm">Last Name</label>
+                  <input
+                    type="text"
+                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center"
+                  />
+                </div>
+                <div style="width: 48%" class="pb-3">
+                  <label class="block text-gray-600 text-sm"
+                    >Emial or phone number</label
+                  >
+                  <input
+                    type="email"
+                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center"
+                  />
+                </div>
+                <div style="width: 48%" class="pb-3">
+                  <label class="block text-gray-600 text-sm"
+                    >Date of birth</label
+                  >
+                  <input
+                    type="date"
+                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center items-center"
+                  />
+                </div>
+                <div style="width: 48%" class="pb-3">
+                  <label class="block text-gray-600 text-sm">Password</label>
+                  <input
+                    type="password"
+                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center"
+                  />
+                </div>
+                <div style="width: 48%" class="pb-3">
+                  <label class="block text-gray-600 text-sm"
+                    >Confirm password</label
+                  >
+                  <input
+                    type="password"
+                    class="w-full border border-gray-400 rounded h-9 pb-3 text-black text-center"
+                  />
+                </div>
+                <div class="flex w-full justify-between">
+                  <div class="flex items-center mb-4 self-center">
+                    <input
+                      id="default-checkbox"
+                      type="checkbox"
+                      value=""
+                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    />
+                    <label
+                      for="default-checkbox"
+                      class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      >Default checkbox</label
+                    >
+                  </div>
+                  <div class="text-blue-500 text-sm cursor-pointer">
+                    Forgot Password?
+                  </div>
+                </div>
+                <div class="flex items-center mb-4 self-center w-full">
+                  <input
+                    id="default-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="default-checkbox"
+                    class="ms-2 text-sm text-gray-400"
+                    >I agree to all the
+                    <span class="text-blue-400">Terms </span>and<span
+                      class="text-blue-400"
+                    >
+                      Privacy Policy</span
+                    >
+                  </label>
+                </div>
+                <div class=" w-full pt-3 flex justify-between">
+                  <button class="bg-blue-600 rounded-md text-sm cursor-pointer" style="width: 48%;" type="submit">Create account</button>
+                  <img class="cursor-pointer" src="assets/google-button.png" style="width: 48%;" alt="">
+                </div>
+                <div class="text-black  text-center cursor-pointer pb-4 w-full">Don't have an account? <span class="text-blue-400">Log in</span></div>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
